@@ -13,6 +13,16 @@
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
 	{% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
+	 <script type="text/javascript">
+if ((window.location.protocol != "https:")&&(window.location.hostname=="{{site.domain}}")){
+  console.log(window.location.protocol);
+  console.log(window.location);
+  var url = window.location.href;
+  url = url.toString().replace("http:", "https:");
+  console.log(window.location.href);
+  window.location.replace(url);
+}
+    </script>
 </head>
 <body>
   <div id="main">
