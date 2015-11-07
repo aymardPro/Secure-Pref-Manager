@@ -22,7 +22,7 @@ description: "Secure Preference Manager is a simple library to help you protect 
 source_link: "https://github.com/prashantsolanki3/Secure-Pref-Manager"
 favicon:     "img/favicon.ico"
 touch_icon:  "img/apple-touch-icon.png"
-google_analytics_key:  ## put YOUR key here to enable tracking! (blank to disable)
+google_analytics_key: UA-55643409-4 ## put YOUR key here to enable tracking! (blank to disable)
 
 
 ### template colors, used site-wide via css ###
