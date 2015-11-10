@@ -1,5 +1,5 @@
 ---
-title: "Usage"
+title: "Simple"
 bg: '#63BD2F'
 color: white
 fa-icon: plug
@@ -27,26 +27,6 @@ fa-icon: plug
                .initialize();
 {% endhighlight %}
 
-* Advance Initialization: Only if you wanna add Custom Encryption Methods.
-
-{% highlight text linenos=table %}
-       new SecurePrefManagerInit.Initializer(getApplicationContext())
-               .useEncryption(true)
-               .setCustomEncryption(new Encryptor(getApplicationContext()) {
-                   @Override
-                   public String encrypt(String s) throws Exception {
-                       // Your Encryption Algorithm
-                       return encryptedString;
-                   }
-
-                   @Override
-                   public String decrypt(String s) throws Exception {
-                       // Your Decryption Algorithm
-                       return decryptedString;
-                   }
-               })
-               .initialize();
-{% endhighlight %}
 
 ### Adding and Retrieving Preferences
 
@@ -66,7 +46,4 @@ fa-icon: plug
                 .defaultValue("unknown")
                 .go();
 {% endhighlight %}
-
-
-### Have Fun!
 
