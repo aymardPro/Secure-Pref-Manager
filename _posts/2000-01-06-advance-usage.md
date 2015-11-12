@@ -61,7 +61,7 @@ public class CustomEncryptor extends Encryptor {
 }
 {% endhighlight %}
 
-## Preference Hiding
+## Preference Hiding (EXPERIMENTAL)
 
 Now hide your Preference from others.
 
